@@ -1,0 +1,31 @@
+Körschema
+
+
+cmd:
+flutter pub add flutter_hooks
+flutter pub add flutter_bloc
+
+Skapa modellen:
+Skapa foldrar
+Skapa wine.dart
+flutter pub add equatable
+Import ''
+
+Skapa Repository:
+Skapa foldrar
+Skapa base_api_repository.dart
+flutter pub add retrofit - retrofit.dart is a type conversion dio client generator using source_gen and inspired by Chopper and Retrofit.
+dart pub add retrofit_generator
+flutter packages pub run build_runner build --delete-conflicting-outputs  - För att kunna generera
+flutter pub add flutter_secure_storage - För att säkert spara t ex jwt-token
+import 'package:flutter_secure_storage/flutter_secure_storage.dart'
+
+Skapa cubits:
+Skapa foldrar
+Skapa remote_wines_cubit.dart
+Skapa remote_wines_state.dart
+flutter pub add dio - för att skapa en kraftfull HttpClient
+Import ''
+
+Om man ska kunna spara en entitet i en databas behövs följande modul:
+flutter pub add floor
